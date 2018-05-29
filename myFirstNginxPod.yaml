@@ -1,0 +1,22 @@
+# my first nginx pod
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod-1
+  labels:
+    app: nginx-server
+    num: A
+spec:
+  containers:
+  - name: nginx-server-1
+    image: cmcreborn/nginx-test-001:0.0.6
+    ports:
+    - containerPort: 80
+    volumeMounts:
+    - name: secret-volume
+      mountPath: /usr/share/nginx/html/username
+      readOnly: false
+  volumes:
+  - name: secret-volume
+    secret:
+      secretName: demo-secret-from-yaml
