@@ -1,0 +1,22 @@
+{
+  "name": "mydockertest004",
+  "version": "1.0.0",
+  "description": "docker test for nodejs express sample",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "docker",
+    "k8s",
+    "express"
+  ],
+  "author": "FPChen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
