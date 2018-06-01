@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
   - name: nginx-server-3
-    image: cmcreborn/nginx-pod-3-hw:0.0.3
+    image: cmcreborn/nginx-pod-3-hw:0.0.7
     ports:
     - containerPort: 5566
     resources:
